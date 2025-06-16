@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import com.crud.cartao.demo.model.Cartao;
@@ -16,19 +15,9 @@ import com.crud.cartao.demo.services.ICartaoService;
 @RequestMapping("api/v1/card")
 @CrossOrigin("*")
 public class CartaoController {
-    
+
     @Autowired
     private ICartaoService iCartaoService;
-
-   
-    @Controller
-    public class HomeController {
-    @RequestMapping("/")
-    public String home() {
-        return "redirect:/index.html";
-    }
-}
-
 
 
     @GetMapping("/list")
