@@ -12,50 +12,24 @@ public class CartaoServicos implements ICartaoService {
 
     @Override
     public List<Cartao> findAll() {
-        List<Cartao> list;
-        try{
-                list = iCartaoRepositorio.findAll();
-        }
-        catch(Exception ex){
-             throw ex;
-        }
-        return list;
+         return iCartaoRepositorio.findAll();
+    
     }
 
     @Override
     public int save(Cartao card) {
-    int row;
-        try{
-                row = iCartaoRepositorio.save(card);
-        }
-        catch(Exception ex){
-             throw ex;
-        }
-        return row;
+            return iCartaoRepositorio.save(card);
+      
     }
 
     @Override
     public int update(Cartao card) {
-    int row;
-        try{
-                row = iCartaoRepositorio.update(card);
-        }
-        catch(Exception ex){
-             throw ex;
-        }
-        return row;
+        return iCartaoRepositorio.update(card);
     }
 
     @Override
     public int deleteByid(int id) {
-    int row;
-        try{
-                row = iCartaoRepositorio.deleteByid(id);
-        }
-        catch(Exception ex){
-             throw ex;
-        }
-        return row; 
+        return iCartaoRepositorio.deleteByid(id);
     }
 
     

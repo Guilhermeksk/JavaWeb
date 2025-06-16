@@ -16,12 +16,13 @@ import com.crud.cartao.demo.services.ICartaoService;
 @RequestMapping("api/v1/card")
 @CrossOrigin("*")
 public class CartaoController {
+    
     @Autowired
     private ICartaoService iCartaoService;
 
    
     @Controller
-public class HomeController {
+    public class HomeController {
     @RequestMapping("/")
     public String home() {
         return "redirect:/index.html";
