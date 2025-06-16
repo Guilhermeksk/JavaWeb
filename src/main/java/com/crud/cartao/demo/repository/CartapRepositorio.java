@@ -42,13 +42,14 @@ public int save(Cartao card) {
         card.getNumero(),
         card.getTipo(),
         card.getCvv(),
+        card.getStatus(),
         card.getId_card()
     });
 }
 
     @Override
     public int deleteByid(int id) {
-    String SQL = "delete cartao where id_card = ?";
+    String SQL = "delete from cartao where id_card = ?";
     return jdbcTemplate.update(SQL, new Object[] {id});
     }
 
