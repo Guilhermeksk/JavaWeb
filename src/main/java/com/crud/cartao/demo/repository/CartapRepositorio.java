@@ -36,7 +36,7 @@ public int save(Cartao card) {
 
     @Override
     public int update(Cartao card) {
-        String SQL = "UPDATE cartao set nome_card = ?, numero = ?, tipo = ?, cvv = ? where id_card = ?";
+        String SQL = "UPDATE cartao set nome_card = ?, numero = ?, tipo = ?, cvv = ?, status = ? where id_card = ?";
     return jdbcTemplate.update(SQL, new Object[] {
         card.getNome_card(),
         card.getNumero(),

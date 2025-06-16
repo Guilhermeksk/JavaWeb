@@ -245,9 +245,8 @@ function validarDados(dados) {
 }
 
 function mostrarNotificacao(mensagem, tipo) {
-    // Por simplicidade, usando alert. Em produção, seria melhor um toast/notification
     alert(mensagem);
 }
 
-// Carrega a lista ao abrir
+
 carregar();
